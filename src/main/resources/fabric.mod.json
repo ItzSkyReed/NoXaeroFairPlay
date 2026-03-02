@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "noxaerofairplay",
+  "version": "${version}",
+  "name": "NoXaeroFairPlay",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "LGPL-3.0",
+  "icon": "assets/noxaerofairplay/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.skyreed.noxaerofairplay.client.NoXaeroFairPlayClient"
+    ],
+    "main": [
+      "com.skyreed.noxaerofairplay.NoXaeroFairPlay"
+    ]
+  },
+  "mixins": [
+    "noxaerofairplay.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
